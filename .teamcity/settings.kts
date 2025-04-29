@@ -41,7 +41,7 @@ object ProjectMaven_Build : BuildType({
     name = "Build"
 
     params {
-        param("teamcity.tool.maven", "%teamcity.tool.maven.DEFAULT%")
+        param("teamcity.tool.maven", "%teamcity.tool.maven_3.3%")
     }
 
     steps {
@@ -64,14 +64,14 @@ object ProjectSimple_Build : BuildType({
     name = "Build"
 
     params {
-        param("teamcity.tool.maven1", "formbuild")
+        param("teamcity.tool.maven", "formbuild")
     }
 
     steps {
         step {
             type = "Projectparent_ProjectSimple_Build1"
             executionMode = BuildStep.ExecutionMode.DEFAULT
-            param("env.PATH", "%env.PATH%:%teamcity.tool.maven1%/bin")
+            param("env.PATH", "%env.PATH%:%teamcity.tool.maven%/bin")
         }
     }
 })
