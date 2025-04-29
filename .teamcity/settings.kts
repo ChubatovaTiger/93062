@@ -41,14 +41,14 @@ object ProjectMaven_Build : BuildType({
     name = "Build"
 
     params {
-        param("teamcity.tool.maven", "%teamcity.tool.maven.DEFAULT%")
+        param("teamcity.tool.mavena", "%teamcity.tool.maven.DEFAULT%")
     }
 
     steps {
         step {
             type = "Projectparent_ProjectMaven_Recipe1"
             executionMode = BuildStep.ExecutionMode.DEFAULT
-            param("env.PATH", "%env.PATH%:%teamcity.tool.maven%/bin")
+            param("env.PATH", "%env.PATH%:%teamcity.tool.mavena%/bin")
         }
     }
 })
