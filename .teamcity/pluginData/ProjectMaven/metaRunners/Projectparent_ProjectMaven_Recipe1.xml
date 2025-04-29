@@ -1,0 +1,18 @@
+<meta-runner name="build1">
+  <description>Recipe1</description>
+  <settings>
+    <parameters>
+      <param name="env.PATH" value="%env.PATH%:%teamcity.tool.maven3_3%/bin" />
+    </parameters>
+    <build-runners>
+      <runner name="" type="simpleRunner">
+        <parameters>
+          <param name="script.content" value="echo %env.PATH%" />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
+        </parameters>
+      </runner>
+    </build-runners>
+    <requirements />
+  </settings>
+</meta-runner>
