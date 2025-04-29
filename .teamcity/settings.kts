@@ -41,7 +41,7 @@ object ProjectMaven_Build : BuildType({
     name = "Build"
 
     params {
-        param("teamcity.tool.maven", "%teamcity.tool.maven3_3%")
+        param("teamcity.tool.maven", "%teamcity.tool.maven.DEFAULT%")
     }
 
     steps {
