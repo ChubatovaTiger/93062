@@ -48,7 +48,7 @@ object ProjectMaven_Build : BuildType({
         step {
             type = "Projectparent_ProjectMaven_Recipe1"
             executionMode = BuildStep.ExecutionMode.DEFAULT
-            param("env.PATH", "%env.PATH%:%teamcity.tool.maven%/bin")
+            param("env.PATH", "%env.PATH%:%teamcity.tool.maven1%/bin")
         }
     }
 })
@@ -71,7 +71,7 @@ object ProjectSimple_Build : BuildType({
         step {
             type = "Projectparent_ProjectSimple_Build1"
             executionMode = BuildStep.ExecutionMode.DEFAULT
-            param("env.PATH", "%env.PATH%:%teamcity.tool.maven%/bin")
+            param("env.PATH", "%env.PATH%:%teamcity.tool.maven1%/bin")
         }
     }
 })
