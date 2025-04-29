@@ -2,7 +2,7 @@
   <description>Recipe1</description>
   <settings>
     <parameters>
-      <param name="env.PATH" value="%env.PATH%:%teamcity.tool.maven_3.3%/bin" />
+      <param name="env.PATH" value="%env.PATH%:%teamcity.tool.maven3_3%/bin" />
     </parameters>
     <build-runners>
       <runner name="" type="simpleRunner">
