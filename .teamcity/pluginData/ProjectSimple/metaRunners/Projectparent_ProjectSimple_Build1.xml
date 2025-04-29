@@ -2,7 +2,7 @@
   <description>Recipe1</description>
   <settings>
     <parameters>
-      <param name="env.PATH" value="%env.PATH%:%teamcity.agent.name%" />
+      <param name="env.PATH" value="%env.PATH%:%teamcity.agent.os%" />
     </parameters>
     <build-runners>
       <runner name="" type="simpleRunner">
